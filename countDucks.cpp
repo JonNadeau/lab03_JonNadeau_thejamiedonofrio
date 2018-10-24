@@ -20,13 +20,14 @@ int main(int argc, char *argv[])
   ifs.open(file);
   string line = " ";
   int d = 0, nd = 0, a = 0;
+  getline(ifs, line);
   while(line != ""){
-  	getline(ifs, line);
 	a++;
 	if(line == "duck")
 		d++;
 	else
 		nd++;
+	getline(ifs, line);
   }
   cout << "Animal count:   " << a << endl << "Duck count:     " << d << endl << "Non duck count: " << nd << endl;
   return 0;
