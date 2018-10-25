@@ -29,6 +29,6 @@ int main(int argc, char *argv[])
 		nd++;
 	getline(ifs, line);
   }
-  cout << "Animal count:   " << a << endl << "Duck count:     " << d << endl << "Non duck count: " << nd << endl;
+  cout << "Animal count:    " << a << endl << "Duck count:      " << d << endl << "Non duck count:  " << nd << endl;
   return 0;
 }
