@@ -18,10 +18,10 @@ int main(int argc, char *argv[])
   string file = (argv[1]);
   ifstream ifs;
   ifs.open(file);
-  string line = " ";
+  string line = "";
   int d = 0, nd = 0, a = 0;
   getline(ifs, line);
-  while(line != ""){
+  while(ifs){
 	a++;
 	if(line == "duck")
 		d++;
@@ -29,6 +29,6 @@ int main(int argc, char *argv[])
 		nd++;
 	getline(ifs, line);
   }
-  cout << "Animal count:    " << a << endl << "Duck count:      " << d << endl << "Non duck count:  " << nd << endl;
+  cout << "Report for " << file << ":" << endl << "   Animal count:    " << a << endl << "   Duck count:      " << d << endl << "   Non duck count:  " << nd << endl;
   return 0;
 }
